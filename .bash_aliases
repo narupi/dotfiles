@@ -1,0 +1,12 @@
+alias ll='ls -l'
+alias la='ls -A'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ..='cd ..'
+alias del='rm -i'
+alias powerup='apt update && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y'
+alias iptu='echo 1 > /proc/sys/net/ipv4/ip_forward'
+alias iptd='echo 0 > /proc/sys/net/ipv4/ip_forward'
+alias stealth='killall firefox-esr; service tor start; sleep 5; proxychains firefox-esr http://www.whatismyipaddress.com http://www.google.com;'
+
