@@ -1,5 +1,6 @@
 alias ll='ls -l'
 alias la='ls -A'
+alias lla='ls -la'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
