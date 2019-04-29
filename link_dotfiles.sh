@@ -1,5 +1,5 @@
 set -u
-DOT_DIRECTORY="${HOME}/startup/dotfiles"
+DOT_DIRECTORY=" $(cd $(dirname $0) && pwd)/dotfiles"
 DOT_CONFIG_DIRECTORY=".config"
 
 echo "link home directory dotfiles"
