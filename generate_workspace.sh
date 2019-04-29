@@ -1,2 +1,8 @@
-apt update && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y
+sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
+
+sh link
+
+
+
+
 
