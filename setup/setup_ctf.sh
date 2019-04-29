@@ -1,11 +1,12 @@
+echo "setup ctf"
 #pwntools
-apt-get update
-apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
-pip install --upgrade pip
-pip install --upgrade pwntools
+sudo apt-get update
+sudo apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
+sudo pip install --upgrade pip
+sudo pip install --upgrade pwntools
 
 #radare2
-git clone https://github.com/radare/radare2.git
+git clone https://github.com/radare/radare2.git ~/
 cd radare2
 sh sys/install.sh
 cd ~
