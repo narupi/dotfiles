@@ -12,10 +12,10 @@ sh sys/install.sh
 cd ~
 
 #exiftool
-sudo apt install exiftool
+sudo apt install -y exiftool 
 
 #binwalk
-sudo apt install binwalk
+sudo apt install -y binwalk
 
 #foremost
-sudo apt install foremost
+sudo apt install -y foremost
