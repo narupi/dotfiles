@@ -1,7 +1,7 @@
 echo "setup ctf"
 #pwntools
 sudo apt-get update
-sudo apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
+sudo apt-get install -y python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
 sudo pip install --upgrade pip
 sudo pip install --upgrade pwntools
 

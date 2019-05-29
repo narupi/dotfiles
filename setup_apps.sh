@@ -19,7 +19,7 @@ SETUP_DIRECTORY=" $(cd $(dirname $0) && pwd)/setup"
 cd ${SETUP_DIRECTORY}
 for f in setup*
 do
-    sh ${f}
+    bash ${f}
 done
 
 echo "setup complete!"
