@@ -22,6 +22,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('tomasr/molokai')
     call dein#add('scrooloose/nerdtree')
     call dein#add('leafgarland/typescript-vim')
+    call dein#add('udalov/kotlin-vim')
 
     if !has('nvim')
         call dein#add('roxma/nvim-yarp')
