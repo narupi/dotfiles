@@ -23,6 +23,11 @@ if dein#load_state('~/.cache/dein')
     call dein#add('scrooloose/nerdtree')
     call dein#add('leafgarland/typescript-vim')
     call dein#add('udalov/kotlin-vim')
+    call dein#add('prabirshrestha/async.vim')
+    call dein#add('prabirshrestha/vim-lsp')
+    call dein#add('prabirshrestha/asyncomplete.vim')
+    call dein#add('prabirshrestha/asyncomplete-lsp.vim')
+    call dein#add('natebosch/vim-lsc')
 
     if !has('nvim')
         call dein#add('roxma/nvim-yarp')
@@ -119,6 +124,13 @@ set cursorline
 set showmatch
 set ambiwidth=double
 
+" vim-lsp
+let g:lsp_diagnostics_enabled = 1
+"debug
+let g:lsp_log_verbose = 1
+let g:lsp_log_file = expand('~/vim-lsp.log')
+let g:asyncomplete_log_file = expand('~/asyncomplete.log')
+
 
 
 
@@ -160,3 +172,30 @@ imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
         smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
             \ "\<Plug>(neosnippet_expand_or_jump)"
                 \: "\<TAB>"
+
+
+if executable('pyls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
+        \ })
+endif
+
+
+if executable('pyls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
+        \ })
+endif
+
+
+if executable('pyls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
+        \ })
+endif
