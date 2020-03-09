@@ -30,3 +30,10 @@ alias sl='ls'
 alias pc='cp'
 alias gti='git'
 
+alias lynx='lynx -vikeys'
+
+alias python='python3'
+
+alias checksec='/usr/local/bin/checksec'
+
+alias curl_header='curl -D - -s -o /dev/null'

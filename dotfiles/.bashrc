@@ -135,3 +135,4 @@ PATH=$JAVA_HOME/bin:$PATH
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/narupi/.sdkman"
 [[ -s "/home/narupi/.sdkman/bin/sdkman-init.sh" ]] && source "/home/narupi/.sdkman/bin/sdkman-init.sh"
+
