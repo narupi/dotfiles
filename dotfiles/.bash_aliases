@@ -37,3 +37,8 @@ alias python='python3'
 alias checksec='/usr/local/bin/checksec'
 
 alias curl_header='curl -D - -s -o /dev/null'
+
+if [ -d ${HOME}/.Trash ]
+then
+    alias rm='mv --backup=numbered --target-directory=${HOME}/.Trash'
+fi
